@@ -56,10 +56,10 @@ class Content extends Component {
 const TemplateWrapper = ({ children, location }) => (
     <div>
         <Helmet
-            title="Gatsby Default Starter"
+            title="Jacob Schmocker"
             meta={[
-                { name: 'description', content: 'Sample' },
-                { name: 'keywords', content: 'sample, something' },
+                { name: 'description', content: 'Jacob Schmocker is a web developer, soon-to-be student of computer science, and a Linux enthusiast that decided to start a blog.' },
+                { name: 'author', content: 'Jacob Schmocker' },
             ]}
             link={[
                 { href: 'https://fonts.googleapis.com/css?family=Bitter:400,400i,700|Mina|Rubik:700', rel: 'stylesheet' }
