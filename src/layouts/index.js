@@ -62,7 +62,7 @@ const TemplateWrapper = ({ children, location }) => (
                 { name: 'author', content: 'Jacob Schmocker' },
             ]}
             link={[
-                { href: 'https://fonts.googleapis.com/css?family=Bitter:400,400i,700|Mina|Rubik:700', rel: 'stylesheet' }
+                { href: 'https://fonts.googleapis.com/css?family=Merriweather:400,400i,700|Mina|Rubik:700', rel: 'stylesheet' }
             ]}
         />
         <Header />

@@ -6,8 +6,10 @@ const HeaderWrapper = styled.div`
     min-height: 100px;
     padding: 25px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
     a {
         text-decoration: none;
         color: #333;
@@ -15,6 +17,11 @@ const HeaderWrapper = styled.div`
         &:visited {
             color: #333;
         }
+    }
+
+    @media screen and (min-width: 500px) {
+        flex-direction: row;
+        align-items: center;
     }
 `;
 
