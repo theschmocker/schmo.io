@@ -34,15 +34,17 @@ const Nav = styled.nav`
         li {
             margin-bottom: 0;
             a {
-                text-transform: lowercase;
+                font-family: 'Mina', sans-serif;
+                text-transform: uppercase;
+                font-weight: bold;
                 &:hover {
-                    border-bottom: 3px solid blue;
+                    border-bottom: 2px solid #333;
                 }
             }
 
             &:after {
+                font-size: 1.25rem;
                 content: "/";
-                font-weight: bold;
                 margin: 0 0.5rem;
             }
 
@@ -59,6 +61,7 @@ const Nav = styled.nav`
 const Heading = styled.h1`
     font-size: 2rem;
     font-family: 'Mina', serif;
+    text-transform: uppercase;
 `;
 
 const Header = () => (
