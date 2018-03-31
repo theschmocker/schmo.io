@@ -18,5 +18,6 @@ export default styled.section`
 
     p {
         margin: 1.2rem 0;
+        hyphens: auto;
     }
 `
