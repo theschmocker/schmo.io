@@ -13,37 +13,6 @@ const ContentWrapper = styled.div`
 `
 
 class Content extends Component {
-    // componentWillReceiveProps(nextProps) {
-    //     const { location } = this.props;
-    //     console.log(this.wrapper)
-    //     if (location.pathname !== nextProps.location.pathname) {
-    //         this.wrapper.transition = this.wrapper.animate([
-    //             { opacity: 1 },
-    //             { opacity: 0 },
-    //         ],
-    //         {
-    //             duration: 1000,
-    //             fill: "forwards",
-    //             iterations: 1,
-    //         });
-    //     }
-    // }
-    // componentDidUpdate(lastProps, lastState) {
-    //     const { location } = this.props;
-    //     console.log(this.wrapper)
-    //     if (location.pathname !== lastProps.location.pathname) {
-    //         this.wrapper.transition.onfinish = this.wrapper.animate([
-    //             { opacity: 0 },
-    //             { opacity: 1 },
-    //         ],
-    //         {
-    //             duration: 500,
-    //             fill: "forwards",
-    //             iterations: 1,
-    //         });
-    //     }
-    // }
-
     render() {
         return (
             <ContentWrapper ref={(wrapper) => this.wrapper = ReactDOM.findDOMNode(wrapper)}>
