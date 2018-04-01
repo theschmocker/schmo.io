@@ -7,6 +7,7 @@ import Transition from 'react-transition-group/Transition';
 
 import Header from '../components/Header'
 import './normalize.css';
+import './index.css';
 
 const ContentWrapper = styled.div`
     padding: 25px;
