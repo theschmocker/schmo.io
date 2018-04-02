@@ -1,5 +1,5 @@
 import React from 'react';
-import Section from '../StyledSection';
+import Section from '../../components/StyledSection';
 
 const Post = ({ data, transition }) => (
     <Section style={transition && transition.style}>
