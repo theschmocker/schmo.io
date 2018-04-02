@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import styled from 'styled-components';
 import ReactDOM from 'react-dom';
 import Transition from 'react-transition-group/Transition';
 
@@ -9,16 +8,12 @@ import Header from '../components/Header'
 import './normalize.css';
 import './index.css';
 
-const ContentWrapper = styled.div`
-    padding: 25px;
-`
-
 class Content extends Component {
     render() {
         return (
-            <ContentWrapper ref={(wrapper) => this.wrapper = ReactDOM.findDOMNode(wrapper)}>
+            <div ref={(wrapper) => this.wrapper = ReactDOM.findDOMNode(wrapper)}>
                 {this.props.children}
-            </ContentWrapper>
+            </div>
         )
     }
 }
