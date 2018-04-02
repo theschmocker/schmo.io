@@ -2,9 +2,21 @@ import React from 'react';
 import Link from 'gatsby-link';
 import styled, { keyframes } from 'styled-components';
 
+import Navigation from '../Navigation';
+
+const Header = () => (
+    <HeaderWrapper>
+        <Heading><Link to="/">schmo</Link></Heading>
+        <Navigation />
+    </HeaderWrapper>
+)
+
+export default Header
+
+// Styled Components
+
 const HeaderWrapper = styled.div`
-    min-height: 100px;
-    padding: 25px;
+    padding: 1.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -20,41 +32,8 @@ const HeaderWrapper = styled.div`
     }
 
     @media screen and (min-width: 500px) {
-        flex-direction: row;
-        align-items: center;
-    }
-`;
-
-const Nav = styled.nav`
-    ul {
-        list-style-type: none;        
-        display: flex;
-        margin-left: 0;
-        padding: 0;
-        li {
-            margin-bottom: 0;
-            a {
-                font-family: 'Mina', sans-serif;
-                text-transform: uppercase;
-                font-weight: bold;
-                &:hover {
-                    border-bottom: 2px solid #333;
-                }
-            }
-
-            &:after {
-                font-size: 1.25rem;
-                content: "/";
-                margin: 0 0.5rem;
-            }
-
-            &:last-child {
-                &:after {
-                    content: "";
-                    margin: 0;
-                }
-            }
-        }
+    flex-direction: row;
+    align-items: center;
     }
 `;
 
@@ -64,18 +43,3 @@ const Heading = styled.h1`
     text-transform: uppercase;
 `;
 
-const Header = () => (
-    <HeaderWrapper>
-        <Heading><Link to="/">schmo</Link></Heading>
-        <Nav>
-            <ul>
-                <li><Link to="/about">About</Link></li>
-                <li><Link to="/projects">Projects</Link></li>
-                <li><Link to="/blog">Blog</Link></li>
-            </ul>
-        </Nav>
-    </HeaderWrapper>
-
-)
-
-export default Header
