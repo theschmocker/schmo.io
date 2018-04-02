@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 export default styled.section`
+    padding: 1.5rem;
+    padding-top: 0;
     font-family: 'Merriweather', sans-serif;
     color: #333;
     line-height: 1.4rem;
@@ -13,7 +15,6 @@ export default styled.section`
     h5,
     h6 {
         letter-spacing: normal;
-        font-family: 'Merriweather', serif;
     }
 
     p {
