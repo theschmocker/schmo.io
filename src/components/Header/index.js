@@ -20,7 +20,6 @@ const HeaderWrapper = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-width: 600px;
     margin: 0 auto;
     a {
         text-decoration: none;

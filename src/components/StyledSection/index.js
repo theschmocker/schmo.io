@@ -6,7 +6,6 @@ export default styled.section`
     font-family: 'Merriweather', sans-serif;
     color: #333;
     line-height: 1.4rem;
-    max-width: 600px;
     margin: 0 auto;
     h1,
     h2,
