@@ -16,7 +16,7 @@ const NavLink = ({ to, children }) => (
     <Link 
         to={to}
         activeStyle={{
-            borderBottom: '2px solid black',
+            borderBottom: '2px solid #ddd',
         }}
     >
         {children}
@@ -48,6 +48,7 @@ const Nav = styled.nav`
                 font-size: 1.25rem;
                 content: "/";
                 margin: 0 0.5rem;
+                opacity: 0.8;
             }
 
             &:last-child {
