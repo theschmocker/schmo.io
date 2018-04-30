@@ -37,6 +37,7 @@ const StyledTyped = styled.div`
     padding: 2.5px;
     color: #333;
     width: 100%;
+    max-width: 240px;
     font-weight: bold;
     font-size: 1.1rem;
 `;
