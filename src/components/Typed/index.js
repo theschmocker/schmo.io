@@ -33,6 +33,8 @@ export default TypedWrapper;
 
 const StyledTyped = styled.div`
     background: #eee;
+    font-family: monospace;
+    padding: 2.5px;
     color: #333;
     width: 100%;
     font-weight: bold;
