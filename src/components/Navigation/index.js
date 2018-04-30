@@ -16,7 +16,7 @@ const NavLink = ({ to, children }) => (
     <Link 
         to={to}
         activeStyle={{
-            borderBottom: '2px solid #ddd',
+            borderBottom: '2px solid #ccc',
         }}
     >
         {children}
@@ -40,7 +40,7 @@ const Nav = styled.nav`
                 text-transform: uppercase;
                 font-weight: bold;
                 &:hover {
-                    border-bottom: 2px solid #333;
+                    border-bottom: 2px solid #999;
                 }
             }
 
@@ -49,6 +49,7 @@ const Nav = styled.nav`
                 content: "/";
                 margin: 0 0.5rem;
                 opacity: 0.8;
+                color: #bbb;
             }
 
             &:last-child {
