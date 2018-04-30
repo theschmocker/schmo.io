@@ -21,7 +21,8 @@ const IdentityCard = () => (
             <p>I'm a</p>
             <TypedWrapper 
                 className="typed" 
-                strings={ typedStrings } />
+                strings={ typedStrings } 
+            />
             <SocialLinks />
         </InfoContainer>
     </StyledID>
@@ -73,6 +74,7 @@ const InfoContainer = styled.section`
     animation: slideFromRight 1s;
     width: 100%;
     padding: 1rem 3rem;
+    padding-left: 1.5rem;
 
     h2 {
         margin-bottom: 1rem;
