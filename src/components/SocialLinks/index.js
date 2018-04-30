@@ -21,6 +21,7 @@ const SocialWrapper = styled.div`
 
     .social-link {
         width: 12.5%;
+        max-width: 35px;
         margin: 1rem;
         margin-left: 0;
         svg {
