@@ -8,10 +8,19 @@ import styled from 'styled-components';
 //<Particles height="100vh"/>
 const IndexPage = () => (    
     <div>
-        <Section>
+        <IndexWrapper>
             <IdentityCard />
-        </Section>
+        </IndexWrapper>
     </div>
 )
+
+const IndexWrapper = styled.div`
+    @media screen and (min-width: 500px) {
+        height: calc(100vh - 100px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+`;
 
 export default IndexPage
