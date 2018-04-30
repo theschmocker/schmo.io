@@ -4,16 +4,24 @@ import Section from '../components/StyledSection';
 import SocialLinks from '../components/SocialLinks';
 import typingCat from '../media/cat-typing.mp4';
 import styled from 'styled-components';
+import TypedWrapper from '../components/Typed';
 
 //<video style={{ margin: '0 auto', }} autoPlay={true} muted loop src={typingCat}/>
 //<Particles height="100vh"/>
-const IndexPage = ({ transition }) => (    
+const IndexPage = () => (    
     <div>
-    <Section style={transition && transition.style}>
-        <IdentityCard />
-    </Section>
+        <Section>
+            <IdentityCard />
+        </Section>
     </div>
 )
+
+const typedStrings = [
+    '^1200Web Developer',
+    'Linux Enthusiast',
+    'Coffee Lover',
+    'Wannabe Beer Snob',
+].map(str => str + '^750');
 
 const IdentityCard = () => (
     <StyledID>
@@ -24,6 +32,9 @@ const IdentityCard = () => (
         <InfoContainer>
             <h2>Hey. I'm Schmo.</h2>
             <p>I'm a</p>
+            <TypedWrapper 
+                className="typed" 
+                strings={ typedStrings } />
             <SocialLinks />
         </InfoContainer>
     </StyledID>
@@ -35,9 +46,26 @@ const ImageContainer = styled.section`
     align-items: center;
     width: 50%;
     height: 100%;
+    animation: slideFromLeft 1s;
 
     & img {
         border-radius: 50%;
+        filter: drop-shadow(0 0px 7px #444);
+    }
+
+    @keyframes slideFromLeft {
+        0% {
+            transform: translateX(-1rem);
+            opacity: 0;
+        }
+        50% {
+            transform: translateX(-1rem);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
     }
 `;
 
@@ -49,6 +77,33 @@ const InfoContainer = styled.section`
     width: calc(50% - 1px);
     height: 100%;
     padding: 2.1rem;
+    animation: slideFromRight 1s;
+
+    h2 {
+        margin-bottom: 1rem;
+        text-shadow: 0 0 5px #222;
+    }
+    
+    p {
+        margin: 0;
+        margin-bottom: 0.25rem;
+        color: #ccc;
+    }
+
+    @keyframes slideFromRight {
+        0% {
+            transform: translateX(1rem);
+            opacity: 0;
+        }
+        50% {
+            transform: translateX(1rem);
+            opacity: 0;
+        }
+        100% {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
 `;
 
 const Separator = styled.div`
@@ -67,6 +122,18 @@ const StyledID = styled.main`
     color: #eee;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
     border-radius: 5px;
+    animation: fadeInUp 0.5s;
+
+    @keyframes fadeInUp {
+        0% {
+            transform: translateY(4rem);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
 `;
 
 export default IndexPage
