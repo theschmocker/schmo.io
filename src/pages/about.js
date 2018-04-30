@@ -1,20 +1,34 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import Section from '../components/StyledSection';
+import styled from 'styled-components';
 
-const AboutPage = ({ transition }) => (
-  <Section style={transition && transition.style}>
-    <h2>Hey there</h2>
-    <p>Call me <em>Schmo</em>. My name is actually Jacob Schmocker, but <em>Schmo</em> is what my friends call me.</p>
-    <p>Until I write a real description for myself, this is what you get. A placeholder. You won't get to read about what I'm like, what I do, or that I'm a web developer. Or that I'm a (GNU/)Linux enthusiast.</p>
-    <p>A wannabe beer and coffee snob.</p>
-    <p>Lover of (usually dystopian) fiction.</p>
-    <p>Student.</p>
-    <p>. . .</p>
-    <p><strong>This is all you get</strong>: a placeholder populated with Schmocker-ipsum.</p>
+const AboutPage = () => (
+  <AboutWrapper>
+    <H2>About Me</H2>
+    <H2>Skills</H2>
+    <H2>About this Site</H2>
     
-    <p><em><small>TODO: Make the good typography.</small></em></p>
-  </Section>
+  </AboutWrapper>
 )
 
 export default AboutPage
+
+const AboutWrapper = styled.section`
+    font-family: 'Open Sans', sans-serif;
+`;
+
+const H2 = styled.h2`
+    position: relative;
+    text-transform: uppercase;
+    width: intrinsic;
+    width: max-content;
+    &:after {
+        content: "";
+        position: absolute;
+        display: block;
+        bottom: -6px;
+        width: 50%;
+        height: 6px;
+        background: #bd1d00;
+    }
+`;
