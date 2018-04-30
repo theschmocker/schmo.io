@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export default styled.section`
+    background: white;
     padding: 1.5rem;
     padding-top: 0;
     font-family: 'Open Sans', sans-serif;
