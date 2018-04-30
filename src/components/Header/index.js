@@ -21,18 +21,20 @@ const HeaderWrapper = styled.div`
     flex-direction: column;
     justify-content: space-between;
     margin: 0 auto;
+    background: #444;
     a {
         text-decoration: none;
-        color: #333;
+        color: #ddd;
 
         &:visited {
-            color: #333;
+            color: #ddd;
         }
     }
 
     @media screen and (min-width: 500px) {
-    flex-direction: row;
-    align-items: center;
+        height: 100px;
+        flex-direction: row;
+        align-items: center;
     }
 `;
 
