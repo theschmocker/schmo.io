@@ -31,13 +31,21 @@ const ImageContainer = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    height: 100%;
     animation: slideFromLeft 1s;
+    width: 80%;
 
-    & img {
+    img {
         border-radius: 50%;
         filter: drop-shadow(0 0px 7px #444);
+        width: 70%;
+    }
+
+    @media screen and (min-width: 650px) {
+        width: 50%;
+        height: 100%;
+        img {
+            width: auto;
+        }
     }
 
     @keyframes slideFromLeft {
@@ -61,10 +69,9 @@ const InfoContainer = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    width: calc(50% - 1px);
-    height: 100%;
-    padding: 2.1rem;
     animation: slideFromRight 1s;
+    width: 80%;
+    padding: 1rem 1.5rem;
 
     h2 {
         margin-bottom: 1rem;
@@ -75,6 +82,11 @@ const InfoContainer = styled.section`
         margin: 0;
         margin-bottom: 0.25rem;
         color: #ccc;
+    }
+    @media screen and (min-width: 650px) {
+        width: calc(50% - 1px);
+        height: 100%;
+        padding: 2.1rem;
     }
 
     @keyframes slideFromRight {
@@ -97,19 +109,34 @@ const Separator = styled.div`
     width: 2px;
     height: 60%;
     background: #aaa;
+    display: none;
+    @media screen and (min-width: 650px) {
+        display: block;
+    }
 `;
 
 const StyledID = styled.main`
+    font-family: "Merriweather", sans-serif;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 600px;
-    height 300px;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
     background: #444;
     color: #eee;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
-    border-radius: 5px;
-    animation: fadeInUp 0.5s;
+    animation: none;
+    width: 100%;
+    height: 100vh;;
+
+    @media screen and (min-width: 650px) {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.4);
+        border-radius: 5px;
+        width: 600px;
+        height 300px;
+        padding-top: 0;
+        animation: fadeInUp 0.5s;
+    }
 
     @keyframes fadeInUp {
         0% {
