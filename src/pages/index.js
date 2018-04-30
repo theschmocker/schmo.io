@@ -16,7 +16,7 @@ const IndexPage = () => (
 
 const IndexWrapper = styled.div`
     @media screen and (min-width: 500px) {
-        height: calc(100vh - 100px);
+        min-height: calc(100vh - 100px);
         display: flex;
         justify-content: center;
         align-items: center;
