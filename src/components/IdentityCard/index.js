@@ -7,17 +7,17 @@ const typedStrings = [
     '^1200Web Developer',
     'Linux Enthusiast',
     'Coffee Lover',
-    'Wannabe Beer Snob',
+    'Craft Beer Drinker',
 ].map(str => str + '^750'); // pause at the end of each string
 
 const IdentityCard = () => (
     <StyledID>
         <ImageContainer>
-            <img src="https://placeimg.com/200/200/people"/>
+            <img src="https://placeimg.com/200/200/animals"/>
         </ImageContainer>
         <Separator />
         <InfoContainer>
-            <h2>Hey. I'm Schmo.</h2>
+            <h2>Hey. I'm <span className="underline">Schmo</span>.</h2>
             <p>I'm a</p>
             <TypedWrapper 
                 className="typed" 
@@ -28,11 +28,11 @@ const IdentityCard = () => (
 )
 
 const ImageContainer = styled.section`
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     animation: slideFromLeft 1s;
-    width: 80%;
+    width: 70%;
 
     img {
         border-radius: 50%;
@@ -41,6 +41,7 @@ const ImageContainer = styled.section`
     }
 
     @media screen and (min-width: 650px) {
+        display: flex;
         width: 50%;
         height: 100%;
         img {
@@ -70,8 +71,8 @@ const InfoContainer = styled.section`
     justify-content: center;
     align-items: flex-start;
     animation: slideFromRight 1s;
-    width: 80%;
-    padding: 1rem 1.5rem;
+    width: 100%;
+    padding: 1rem 3rem;
 
     h2 {
         margin-bottom: 1rem;
@@ -116,15 +117,16 @@ const Separator = styled.div`
 `;
 
 const StyledID = styled.main`
-    font-family: "Merriweather", sans-serif;
+    font-family: "Open Sans", sans-serif;
     display: flex;
-    flex-direction: column-reverse;
-    justify-content: flex-end;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     background: #444;
     color: #eee;
     animation: none;
     width: 100%;
-    height: 100vh;;
+    min-height: 100vh;
 
     @media screen and (min-width: 650px) {
         flex-direction: row;
@@ -134,6 +136,7 @@ const StyledID = styled.main`
         border-radius: 5px;
         width: 600px;
         height 300px;
+        min-height: 0;
         padding-top: 0;
         animation: fadeInUp 0.5s;
     }
