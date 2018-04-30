@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export default styled.section`
     padding: 1.5rem;
     padding-top: 0;
-    font-family: 'Merriweather', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: #333;
     line-height: 1.4rem;
     margin: 0 auto;
