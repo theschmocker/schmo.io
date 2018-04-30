@@ -22,6 +22,8 @@ const HeaderWrapper = styled.div`
     justify-content: space-between;
     margin: 0 auto;
     background: #444;
+    border-top: 6px solid #bd1d00;
+    text-shadow: 0 0 7px #333;
     a {
         text-decoration: none;
         color: #ddd;
@@ -31,7 +33,7 @@ const HeaderWrapper = styled.div`
         }
     }
 
-    @media screen and (min-width: 500px) {
+    @media screen and (min-width: 650px) {
         height: 100px;
         flex-direction: row;
         align-items: center;
