@@ -20,14 +20,21 @@ const SocialWrapper = styled.div`
     width: 100%;
 
     .social-link {
-        width: 10%;
+        width: 12.5%;
         margin: 1rem;
         margin-left: 0;
         svg {
             fill: #eee;
             width: 100%;
+            transition: transform 0.2s ease;
+            filter: drop-shadow(0 0 5px #333);
         }
-
+        &:hover {
+            svg {
+                fill: #fff;
+                transform: scale(1.05);
+            }
+        }
     }
 `;
 
