@@ -16,9 +16,11 @@ export default Header
 // Styled Components
 
 const HeaderWrapper = styled.div`
+    height: 100px;
     padding: 1.5rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
     margin: 0 auto;
     background: #444;
@@ -34,9 +36,6 @@ const HeaderWrapper = styled.div`
     }
 
     @media screen and (min-width: 650px) {
-        height: 100px;
-        flex-direction: row;
-        align-items: center;
     }
 `;
 
