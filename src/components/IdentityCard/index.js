@@ -3,6 +3,10 @@ import SocialLinks from '../../components/SocialLinks';
 import TypedWrapper from '../../components/Typed';
 import styled from 'styled-components';
 
+import Img from 'gatsby-image';
+
+import meJPG from '../../media/me3.jpg';
+
 const typedStrings = [
     '^1200Web Developer',
     'Linux Enthusiast',
@@ -10,10 +14,12 @@ const typedStrings = [
     'Craft Beer Drinker',
 ].map(str => str + '^750'); // pause at the end of each string
 
-const IdentityCard = () => (
+const IdentityCard = ({ image }) => {     
+    console.log(image);
+    return (
     <StyledID>
         <ImageContainer>
-            <img src="https://placeimg.com/200/200/animals"/>
+            <Img resolutions={image.resolutions}/>
         </ImageContainer>
         <Separator />
         <InfoContainer>
@@ -26,7 +32,8 @@ const IdentityCard = () => (
             <SocialLinks />
         </InfoContainer>
     </StyledID>
-)
+    )
+}
 
 const ImageContainer = styled.section`
     display: none;

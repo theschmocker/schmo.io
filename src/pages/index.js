@@ -6,10 +6,10 @@ import styled from 'styled-components';
 
 //<video style={{ margin: '0 auto', }} autoPlay={true} muted loop src={typingCat}/>
 //<Particles height="100vh"/>
-const IndexPage = () => (    
+const IndexPage = ({ data }) => (    
     <div>
         <IndexWrapper>
-            <IdentityCard />
+            <IdentityCard image={data.file.childImageSharp}/>
         </IndexWrapper>
     </div>
 )
@@ -24,3 +24,16 @@ const IndexWrapper = styled.div`
 `;
 
 export default IndexPage
+
+export const query = graphql`
+    query ProfilePhoto {
+        file(relativePath: {eq: "media/me3.jpg"}) {
+            childImageSharp {
+                resolutions(width: 200, height: 200) {
+                    ...GatsbyImageSharpResolutions_tracedSVG
+                }
+            }
+        }
+
+    }
+`;
