@@ -7,3 +7,5 @@ public/
 .DS_Store
 yarn-error.log
 tmux.sh
+# ternjs
+.tern-port
