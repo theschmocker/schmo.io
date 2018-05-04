@@ -13,37 +13,48 @@ import Menu from 'react-burger-menu/lib/menus/slide';
 //    </Nav>
 //)
 const Navigation = () => (
-    <Menu customCrossIcon={ 
-    <svg width="100px" height="100px" viewPort="0 0 30 30" version="1.1"
-        xmlns="http://www.w3.org/2000/svg">
-        <line x1="1" y1="11" 
-            x2="11" y2="1" 
-            stroke="#ddd" 
-            strokeWidth="2"/>
-        <line x1="1" y1="1" 
-            x2="11" y2="11" 
-            stroke="#ddd" 
-            strokeWidth="2"/>
-    </svg>
-    } right>
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/about">About</NavLink>
-        <NavLink to="/projects">Projects</NavLink>
-        <NavLink to="/blog">Blog</NavLink>
+    <Menu right>
+        <StyledNavLink to="/">Home</StyledNavLink>
+        <StyledNavLink to="/about">About</StyledNavLink>
+        <StyledNavLink to="/projects">Projects</StyledNavLink>
+        <StyledNavLink to="/blog">Blog</StyledNavLink>
     </Menu>
 )
 
-const NavLink = ({ to, children }) => (
+const NavLink = ({ to, children, className }) => (
     <Link 
         exact
         to={to}
         activeStyle={{
-            borderBottom: '2px solid #ccc',
         }}
+        className={className}
     >
         {children}
     </Link>
 )
+
+const StyledNavLink = styled(NavLink)`
+    display: block;
+    position: relative;
+    padding: 0.75rem;
+    &:hover {
+        background: rgba(255, 255, 255, 0.2);
+    }
+
+    &.active:after {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        content: "";
+        width: calc(100% - 1.5rem);
+        height: 3px;
+        background: #bd1d00;
+        margin: 0 0.75rem;
+
+    }
+
+`;
 
 export default Navigation;
 
