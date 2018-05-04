@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Link from 'gatsby-link';
 import styled, { keyframes } from 'styled-components';
 import Menu from 'react-burger-menu/lib/menus/slide';
@@ -12,18 +12,45 @@ import Menu from 'react-burger-menu/lib/menus/slide';
 //        </ul>
 //    </Nav>
 //)
-const Navigation = () => (
-    <Menu right>
-        <StyledNavLink to="/">Home</StyledNavLink>
-        <StyledNavLink to="/about">About</StyledNavLink>
-        <StyledNavLink to="/projects">Projects</StyledNavLink>
-        <StyledNavLink to="/blog">Blog</StyledNavLink>
-    </Menu>
-)
+class Navigation extends Component {
+    state = {
+        menuIsOpen: false,
+    }
+
+    closeMenu = () => {
+        this.setState({ menuIsOpen: false });
+    }
+
+    render() {
+        const pages = [
+            { route: '/', linkText: 'Home' },
+            { route: '/about', linkText: 'About' },
+            { route: '/projects', linkText: 'Projects' },
+            { route: '/blog', linkText: 'Blog' },
+        ]
+        return (
+            <Menu isOpen={ this.state.menuIsOpen } right>
+                {pages.map(page => (
+                    <StyledNavLink
+                        to={page.route} 
+                        onClick={this.closeMenu}
+                    >
+                        {page.linkText}
+                    </StyledNavLink>
+                ))}
+            </Menu>
+        )
+    }
+}
+
+//<StyledNavLink onClick={ this.closeMenu } to="/">Home</StyledNavLink>
+//   <StyledNavLink to="/about">About</StyledNavLink>
+//   <StyledNavLink to="/projects">Projects</StyledNavLink>
+//   <StyledNavLink to="/blog">Blog</StyledNavLink>
 
 const NavLink = ({ to, children, className }) => (
     <Link 
-        exact
+        exact={ to === '/' }
         to={to}
         activeStyle={{
         }}
