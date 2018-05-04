@@ -31,6 +31,12 @@ module.exports = {
                 }],
             }
         },
+        {
+            resolve: 'gatsby-plugin-nprogress',
+            options: {
+                color: 'blue',
+            }
+        },
         'gatsby-transformer-sharp',
         'gatsby-plugin-sharp',
     ],
