@@ -3,15 +3,6 @@ import Link from 'gatsby-link';
 import styled, { keyframes } from 'styled-components';
 import Menu from 'react-burger-menu/lib/menus/slide';
 
-//const Navigation = () => (
-//    <Nav>
-//        <ul>
-//            <li><NavLink to="/about">About</NavLink></li>
-//            <li><NavLink to="/projects">Projects</NavLink></li>
-//            <li><NavLink to="/blog">Blog</NavLink></li>
-//        </ul>
-//    </Nav>
-//)
 class Navigation extends Component {
     state = {
         menuIsOpen: false,
@@ -42,11 +33,6 @@ class Navigation extends Component {
         )
     }
 }
-
-//<StyledNavLink onClick={ this.closeMenu } to="/">Home</StyledNavLink>
-//   <StyledNavLink to="/about">About</StyledNavLink>
-//   <StyledNavLink to="/projects">Projects</StyledNavLink>
-//   <StyledNavLink to="/blog">Blog</StyledNavLink>
 
 const NavLink = ({ to, children, className }) => (
     <Link 
@@ -84,40 +70,3 @@ const StyledNavLink = styled(NavLink)`
 `;
 
 export default Navigation;
-
-// Styled Components
-
-const Nav = styled.nav`
-    ul {
-        list-style-type: none;        
-        display: flex;
-        margin-left: 0;
-        padding: 0;
-        li {
-            margin-bottom: 0;
-            a {
-                font-family: 'Mina', sans-serif;
-                text-transform: uppercase;
-                font-weight: bold;
-                &:hover {
-                    border-bottom: 2px solid #999;
-                }
-            }
-
-            &:after {
-                font-size: 1.25rem;
-                content: "/";
-                margin: 0 0.5rem;
-                opacity: 0.8;
-                color: #bbb;
-            }
-
-            &:last-child {
-                &:after {
-                    content: "";
-                    margin: 0;
-                }
-            }
-        }
-    }
-`;
