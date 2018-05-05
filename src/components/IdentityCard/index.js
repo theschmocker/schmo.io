@@ -129,13 +129,14 @@ const StyledID = styled.main`
     font-family: "Open Sans", sans-serif;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     background: #444;
     color: #eee;
     animation: none;
     width: 100%;
-    min-height: 100vh;
+    min-height: calc(100vh - 100px);
+    padding-bottom: 100px;
 
     @media screen and (min-width: 650px) {
         flex-direction: row;
@@ -146,7 +147,7 @@ const StyledID = styled.main`
         width: 600px;
         height 300px;
         min-height: 0;
-        padding-top: 0;
+        padding-bottom: 0;
         animation: fadeInUp 0.5s;
     }
 
