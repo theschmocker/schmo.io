@@ -34,6 +34,7 @@ const AboutWrapper = styled.article`
     padding: 1.75rem;
     background: #444;
     font-family: 'Open Sans', sans-serif;
+    line-height: 1.4;
     color: #ddd;
     min-height: 100vh;
 `;
