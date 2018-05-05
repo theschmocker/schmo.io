@@ -11,7 +11,8 @@ const typedStrings = [
     '^1200Web Developer',
     'Linux Enthusiast',
     'Coffee Lover',
-    'Craft Beer Drinker',
+    'Craft Beer Fan',
+    'Student',
 ].map(str => str + '^750'); // pause at the end of each string
 
 const IdentityCard = ({ image }) => {     
