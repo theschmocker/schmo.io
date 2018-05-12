@@ -4,23 +4,24 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "gatsby": "^1.9.218",
-    "gatsby-image": "^1.0.48",
-    "gatsby-link": "^1.6.37",
+    "gatsby": "^1.9.260",
+    "gatsby-image": "^1.0.51",
+    "gatsby-link": "^1.6.44",
     "gatsby-plugin-nprogress": "^1.0.14",
-    "gatsby-plugin-react-helmet": "^2.0.5",
-    "gatsby-plugin-sharp": "^1.6.41",
-    "gatsby-plugin-styled-components": "^2.0.9",
-    "gatsby-remark-images": "^1.5.60",
-    "gatsby-source-filesystem": "^1.5.26",
-    "gatsby-transformer-remark": "^1.7.36",
-    "gatsby-transformer-sharp": "^1.6.22",
+    "gatsby-plugin-react-helmet": "^2.0.11",
+    "gatsby-plugin-react-next": "^1.0.11",
+    "gatsby-plugin-sharp": "^1.6.44",
+    "gatsby-plugin-styled-components": "^2.0.11",
+    "gatsby-remark-images": "^1.5.63",
+    "gatsby-source-filesystem": "^1.5.35",
+    "gatsby-transformer-remark": "^1.7.41",
+    "gatsby-transformer-sharp": "^1.6.24",
     "react-burger-menu": "^2.4.4",
     "react-helmet": "^5.2.0",
-    "react-transition-group": "^2.2.1",
+    "react-transition-group": "^2.3.1",
     "react-typed": "^1.0.8",
     "slugify": "^1.2.9",
-    "styled-components": "^3.2.1",
+    "styled-components": "^3.2.6",
     "typed.js": "^2.0.6"
   },
   "keywords": [
@@ -36,6 +37,6 @@
     "dev": "./dev"
   },
   "devDependencies": {
-    "prettier": "^1.11.0"
+    "prettier": "^1.12.1"
   }
 }
