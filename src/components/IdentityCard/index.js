@@ -15,9 +15,7 @@ const typedStrings = [
     'Student',
 ].map(str => str + '^750'); // pause at the end of each string
 
-const IdentityCard = ({ image }) => {     
-    console.log(image);
-    return (
+const IdentityCard = ({ image }) => (
     <StyledID>
         <ImageContainer>
             <Img resolutions={image.resolutions}/>
@@ -33,8 +31,7 @@ const IdentityCard = ({ image }) => {
             <SocialLinks />
         </InfoContainer>
     </StyledID>
-    )
-}
+)
 
 const ImageContainer = styled.section`
     display: none;
