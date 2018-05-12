@@ -24,6 +24,7 @@ class Navigation extends Component {
                     <NavLink
                         to={page.route} 
                         onClick={this.closeMenu}
+                        key={page.linkText}
                     >
                         {page.linkText}
                     </NavLink>
