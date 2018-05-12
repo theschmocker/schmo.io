@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import Link from 'gatsby-link'
 import styled from 'styled-components';
 
@@ -6,13 +6,7 @@ import Heading from '../components/ContentHeading';
 
 const AboutPage = () => (
     <AboutWrapper>
-        <AboutSection>
-            <Heading>About Me</Heading>
-            <p>
-                Ugh four dollar toast mustache celiac poutine dreamcatcher. Truffaut irony man bun tote bag. Chicharrones stumptown you probably haven't heard of them, banh mi craft beer marfa roof party quinoa yr neutra snackwave food truck. Brunch schlitz banjo chillwave, cloud bread small batch hashtag pop-up affogato keffiyeh meh unicorn hexagon.
-            </p>
-            <p>Next level flexitarian woke unicorn, VHS cliche humblebrag yr schlitz brunch man braid tote bag food truck cray. Marfa twee subway tile next level pug keytar direct trade jean shorts synth plaid cardigan sriracha actually put a bird on it bespoke. Mixtape PBR&amp;B celiac beard palo santo marfa glossier before they sold out post-ironic. </p>
-        </AboutSection>
+        <AboutMe />
         <AboutSection>
             <Heading>Skills</Heading>
             <p>
@@ -25,6 +19,17 @@ const AboutPage = () => (
         </AboutSection>
     
   </AboutWrapper>
+)
+
+const AboutMe = () => (
+    <Fragment>
+        <Heading>About Me</Heading>
+        <p>
+            Ugh four dollar toast mustache celiac poutine dreamcatcher. Truffaut irony man bun tote bag. Chicharrones stumptown you probably haven't heard of them, banh mi craft beer marfa roof party quinoa yr neutra snackwave food truck. Brunch schlitz banjo chillwave, cloud bread small batch hashtag pop-up affogato keffiyeh meh unicorn hexagon.
+        </p>
+        <p>Next level flexitarian woke unicorn, VHS cliche humblebrag yr schlitz brunch man braid tote bag food truck cray. Marfa twee subway tile next level pug keytar direct trade jean shorts synth plaid cardigan sriracha actually put a bird on it bespoke. Mixtape PBR&amp;B celiac beard palo santo marfa glossier before they sold out post-ironic. </p>
+    </Fragment>
+
 )
 
 export default AboutPage
