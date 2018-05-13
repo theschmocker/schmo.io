@@ -28,7 +28,7 @@ const AboutMe = () => (
             Hey there. My name is Jacob Schmocker, but you can call me Schmo. I'm a self-taught web developer (in progress) from Wisconsin.
         </p>
         <p>
-            
+            My first computer was a hand-me-down Gateway running Windows 98. Because I like to keep with the times, I left that PC behind long, long ago. 
         </p>
     </section>
 
