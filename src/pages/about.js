@@ -22,13 +22,15 @@ const AboutPage = () => (
 )
 
 const AboutMe = () => (
-    <Fragment>
+    <section>
         <Heading>About Me</Heading>
         <p>
-            Ugh four dollar toast mustache celiac poutine dreamcatcher. Truffaut irony man bun tote bag. Chicharrones stumptown you probably haven't heard of them, banh mi craft beer marfa roof party quinoa yr neutra snackwave food truck. Brunch schlitz banjo chillwave, cloud bread small batch hashtag pop-up affogato keffiyeh meh unicorn hexagon.
+            Hey there. My name is Jacob Schmocker, but you can call me Schmo. I'm a self-taught web developer (in progress) from Wisconsin.
         </p>
-        <p>Next level flexitarian woke unicorn, VHS cliche humblebrag yr schlitz brunch man braid tote bag food truck cray. Marfa twee subway tile next level pug keytar direct trade jean shorts synth plaid cardigan sriracha actually put a bird on it bespoke. Mixtape PBR&amp;B celiac beard palo santo marfa glossier before they sold out post-ironic. </p>
-    </Fragment>
+        <p>
+            
+        </p>
+    </section>
 
 )
 
