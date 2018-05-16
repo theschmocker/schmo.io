@@ -5,7 +5,6 @@ module.exports = {
     },
     plugins: [
         'gatsby-plugin-react-helmet',
-        'gatsby-plugin-styled-components',
         {
             resolve: 'gatsby-source-filesystem',
             options: {
@@ -31,14 +30,9 @@ module.exports = {
                 }],
             }
         },
-        {
-            resolve: 'gatsby-plugin-nprogress',
-            options: {
-                color: 'blue',
-            }
-        },
         'gatsby-transformer-sharp',
         'gatsby-plugin-sharp',
         'gatsby-plugin-react-next',
+        'gatsby-plugin-styled-components',
     ],
 };
