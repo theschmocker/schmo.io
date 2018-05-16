@@ -1,7 +1,7 @@
 import React from 'react';
 import SocialLinks from '../../components/SocialLinks';
 import TypedWrapper from '../../components/Typed';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 import Img from 'gatsby-image';
 
@@ -33,11 +33,26 @@ const IdentityCard = ({ image }) => (
     </StyledID>
 )
 
+const slideFromLeft = keyframes`
+    0% {
+        transform: translateX(-1rem);
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(-1rem);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+`;
+
 const ImageContainer = styled.section`
     display: none;
     justify-content: center;
     align-items: center;
-    animation: slideFromLeft 1s;
+    animation: ${slideFromLeft} 1s;
     width: 70%;
 
     img {
@@ -54,20 +69,20 @@ const ImageContainer = styled.section`
             width: auto;
         }
     }
+`;
 
-    @keyframes slideFromLeft {
-        0% {
-            transform: translateX(-1rem);
-            opacity: 0;
-        }
-        50% {
-            transform: translateX(-1rem);
-            opacity: 0;
-        }
-        100% {
-            transform: translateX(0);
-            opacity: 1;
-        }
+const slideFromRight = keyframes`
+    0% {
+        transform: translateX(1rem);
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(1rem);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
     }
 `;
 
@@ -76,7 +91,7 @@ const InfoContainer = styled.section`
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    animation: slideFromRight 1s;
+    animation: ${slideFromRight} 1s;
     width: 100%;
     padding: 1rem 3rem;
     padding-left: 1.5rem;
@@ -96,21 +111,6 @@ const InfoContainer = styled.section`
         height: 100%;
         padding: 2.1rem;
     }
-
-    @keyframes slideFromRight {
-        0% {
-            transform: translateX(1rem);
-            opacity: 0;
-        }
-        50% {
-            transform: translateX(1rem);
-            opacity: 0;
-        }
-        100% {
-            transform: translateX(0);
-            opacity: 1;
-        }
-    }
 `;
 
 const Separator = styled.div`
@@ -120,6 +120,17 @@ const Separator = styled.div`
     display: none;
     @media screen and (min-width: 650px) {
         display: block;
+    }
+`;
+
+const fadeInUp = keyframes`
+    0% {
+        transform: translateY(4rem);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
     }
 `;
 
@@ -136,7 +147,7 @@ const StyledID = styled.main`
     min-height: calc(100vh - 100px);
     padding-bottom: 100px;
 
-    @media screen and (min-width: 650px) {
+    @media (min-width: 650px) {
         flex-direction: row;
         justify-content: center;
         align-items: center;
@@ -146,19 +157,10 @@ const StyledID = styled.main`
         height 300px;
         min-height: 0;
         padding-bottom: 0;
-        animation: fadeInUp 0.5s;
+        animation: ${fadeInUp} 0.5s;
     }
 
-    @keyframes fadeInUp {
-        0% {
-            transform: translateY(4rem);
-            opacity: 0;
-        }
-        100% {
-            transform: translateY(0);
-            opacity: 1;
-        }
-    }
 `;
+
 
 export default IdentityCard;
