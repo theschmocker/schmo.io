@@ -7,6 +7,7 @@ export default styled.h2`
     text-transform: uppercase;
     width: intrinsic;
     width: max-content;
+    font-size: 1.5rem;
     color: #eee;
     &:after {
         content: "";
