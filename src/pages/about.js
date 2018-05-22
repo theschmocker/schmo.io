@@ -8,11 +8,7 @@ import CatGif from '../components/CatGif';
 const AboutPage = () => (
     <AboutWrapper>
         <AboutMe />
-        <AboutSection>
-            <Heading>Skills</Heading>
-            <p>
-            </p>
-        </AboutSection>
+        <Skills />
         <AboutThisSite />
     
   </AboutWrapper>
@@ -39,6 +35,26 @@ const AboutMe = () => (
 
     </section>
 
+)
+
+const Skills = () => (
+    <section>
+        <Heading>Skills</Heading>
+        <p>
+            Here's a list of things I've used to make things
+        </p>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node</li>
+            <li>Python</li>
+            <li>Webpack</li>
+            <li>Bash/Linux</li>
+        </ul>
+        <p><strong>TODO:</strong><em>make this faster/better/stronger</em></p>
+    </section>
 )
 
 const AboutThisSite = () => (
