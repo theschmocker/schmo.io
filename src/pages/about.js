@@ -41,7 +41,10 @@ const Skills = () => (
     <section>
         <Heading>Skills</Heading>
         <p>
-            Here's a list of things I've used to make things
+            I've been teaching myself web development for just over a year. Over the course of my (ongoing) journey, I've made myself familiar with <em>HTML</em>, <em>CSS</em>, and <em>JavaScript</em>&#8202;&mdash;&#8202;the bread and butter. I'm not an expert yet, but practice makes perfect!
+        </p>
+        <p>
+            Lately I've been working with <em>React</em> and <em>Node</em>.
         </p>
         <ul>
             <li>HTML</li>
@@ -53,6 +56,7 @@ const Skills = () => (
             <li>Webpack</li>
             <li>Bash/Linux</li>
         </ul>
+
         <p><strong>TODO:</strong><em>make this faster/better/stronger</em></p>
     </section>
 )
