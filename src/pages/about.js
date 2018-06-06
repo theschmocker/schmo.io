@@ -18,7 +18,7 @@ const AboutMe = () => (
     <section>
         <Heading>About Me</Heading>
         <p>
-            Hey there. My name is Jacob Schmocker, but you can call me Schmo. 
+            My name is Jacob Schmocker, but you can call me Schmo. 
             I'm a self-taught web developer (in progress) from Wisconsin.
         </p>
         <p>
@@ -41,23 +41,12 @@ const Skills = () => (
     <section>
         <Heading>Skills</Heading>
         <p>
-            I've been teaching myself web development for just over a year. Over the course of my (ongoing) journey, I've made myself familiar with <em>HTML</em>, <em>CSS</em>, and <em>JavaScript</em>&#8202;&mdash;&#8202;the bread and butter. I'm not an expert yet, but practice makes perfect!
+            I've been teaching myself web development for just over a year. Over the course of my (ongoing) journey, I've made myself familiar with <em>HTML</em>, <em>CSS</em>, and <em>JavaScript</em>&#8202;&mdash;&#8202;the bread and butter. I'm not an expert yet, but practice makes perfect and I love to learn!
         </p>
         <p>
             Lately I've been working with <em>React</em> and <em>Node</em>.
         </p>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Node</li>
-            <li>Python</li>
-            <li>Webpack</li>
-            <li>Bash/Linux</li>
-        </ul>
-
-        <p><strong>TODO:</strong><em>make this faster/better/stronger</em></p>
+        <p>I spend a lot of time with <em>Bash</em>, and <em>Linux</em> is my daily-driver OS!</p>
     </section>
 )
 
@@ -65,7 +54,7 @@ const AboutThisSite = () => (
     <section>
         <Heading>About this Site</Heading>
         <p>
-            This site was built with <StyledAnchor href="https://gatsbyjs.org">Gatsby</StyledAnchor>, a static site generator built around <StyledAnchor href="https://reactjs.org">React</StyledAnchor>. A couple third-party React and Gatsby plugins bring it all together. You can check them out, along with my code, on <StyledAnchor href="https://github.com/theschmocker/schmo.io.git">Github</StyledAnchor>!
+            This site was built with <StyledAnchor href="https://gatsbyjs.org">Gatsby</StyledAnchor>, a static site generator built around <StyledAnchor href="https://reactjs.org">React</StyledAnchor>. You can check out my code on <StyledAnchor href="https://github.com/theschmocker/schmo.io.git">Github</StyledAnchor>!
         </p>
     </section>
 )
