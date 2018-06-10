@@ -135,7 +135,7 @@ const fadeInUp = keyframes`
 `;
 
 const StyledID = styled.main`
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;

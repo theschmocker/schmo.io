@@ -4,7 +4,7 @@ export default styled.section`
     background: white;
     padding: 1.5rem;
     padding-top: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #333;
     line-height: 1.4rem;
     margin: 0 auto;

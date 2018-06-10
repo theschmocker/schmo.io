@@ -94,12 +94,12 @@ export default AboutPage
 
 const AboutWrapper = styled.article`
     margin: 0;
-    padding: 1.75rem;
-    background: #444;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.05rem;
+    padding: 1.25rem;
+    background: #333;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
     line-height: 1.4;
-    color: #ddd;
+    color: #d0d0d0;
     min-height: 100vh;
 `;
 

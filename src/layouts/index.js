@@ -27,7 +27,7 @@ const TemplateWrapper = ({ children, location }) => (
                 { name: 'author', content: 'Jacob Schmocker' },
             ]}
             link={[
-                { href: 'https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Mina', rel: 'stylesheet' }
+                { href: 'https://fonts.googleapis.com/css?family=Mina|Roboto:400,400i,700', rel: 'stylesheet' }
             ]}
         />
         <Header />

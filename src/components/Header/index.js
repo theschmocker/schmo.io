@@ -17,13 +17,13 @@ export default Header
 
 const HeaderWrapper = styled.div`
     height: 100px;
-    padding: 1.5rem;
+    padding: 1.5rem 1.1rem;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
-    background: #444;
+    background: #333;
     border-top: 6px solid #bd1d00;
     text-shadow: 0 0 7px #333;
     a {
