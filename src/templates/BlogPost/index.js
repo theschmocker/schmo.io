@@ -1,8 +1,8 @@
 import React from 'react';
 import Section from '../../components/StyledSection';
 
-const Post = ({ data, transition }) => (
-    <Section style={transition && transition.style}>
+const Post = ({ data }) => (
+    <Section>
         <h2>{data.markdownRemark.frontmatter.title}</h2>
         <p>{data.markdownRemark.frontmatter.date}</p>
         <p><em>{data.markdownRemark.frontmatter.description}</em></p>
