@@ -16,6 +16,15 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
             name: 'slug',
             value: slug,
         });
+
+        const typeFromSlug = slug.split('/')[1]; // '/blog/test' would make it 'blog'
+        const type = typeFromSlug || 'page';
+
+        createNodeField({
+            node,
+            name: 'type',
+            value: type,
+        });
     }
 }
 
@@ -29,6 +38,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                         node {
                             fields {
                                 slug
+                                type
                             }
                         }
                     }
@@ -36,9 +46,13 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             }
         `).then(result => {
             result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+                const componentPath = 
+                    node.fields.type === 'blog'
+                        ? './src/templates/BlogPost/index.js'
+                        : './src/templates/Project/index.js';
                 createPage({
                     path: node.fields.slug,
-                    component: path.resolve('./src/templates/BlogPost/index.js'),
+                    component: path.resolve(componentPath),
                     context: {
                         slug: node.fields.slug,
                     }
