@@ -10,7 +10,6 @@ const AboutPage = () => (
         <AboutMe />
         <Skills />
         <AboutThisSite />
-    
   </AboutWrapper>
 )
 
@@ -97,10 +96,20 @@ const AboutWrapper = styled.article`
     padding: 1.25rem;
     background: #333;
     font-family: "Roboto", sans-serif;
-    font-size: 1rem;
     line-height: 1.4;
     color: #d0d0d0;
     min-height: 100vh;
+    max-width: 600px;
+
+    @media screen and (min-width: 550px) {
+        font-size: 1.25rem;
+     
+    }
+
+    @media screen and (min-width: 600px) {
+        border-radius: 5px;
+        margin: 3rem auto;
+    }
 `;
 
 const AboutSection = styled.section`
