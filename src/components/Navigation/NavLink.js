@@ -18,23 +18,22 @@ const StyledNavLink = styled(NavLink)`
     display: block;
     position: relative;
     padding: 0.75rem;
+    padding-left: 2rem;
     &:hover {
         background: rgba(255, 255, 255, 0.2);
     }
 
-    &.active:after {
-        display: block;
-        position: absolute;
-        bottom: 0;
-        left: 0;
+    &.active:before {
         content: "";
-        width: calc(100% - 1.5rem);
-        height: 3px;
-        background: #bd1d00;
-        margin: 0 0.75rem;
-
+        position: absolute;
+        display: block;
+        background: #ffe8e4;
+        height: 7px;
+        width: 7px;
+        border-radius: 50%;
+        top: calc(50% - 3.5px);
+        left: calc(1rem - 3.5px);
     }
-
 `;
 
 export default StyledNavLink;
