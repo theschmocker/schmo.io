@@ -4,6 +4,10 @@ import Helmet from 'react-helmet'
 import ReactDOM from 'react-dom';
 import Transition from 'react-transition-group/Transition';
 
+// Fonts
+import 'typeface-roboto';
+import 'typeface-mina';
+
 import Header from '../components/Header'
 import './normalize.css';
 import './index.css';
@@ -25,9 +29,6 @@ const TemplateWrapper = ({ children, location }) => (
             meta={[
                 { name: 'description', content: 'Jacob Schmocker is a web developer, soon-to-be student of computer science, and a Linux enthusiast that decided to start a blog.' },
                 { name: 'author', content: 'Jacob Schmocker' },
-            ]}
-            link={[
-                { href: 'https://fonts.googleapis.com/css?family=Mina|Roboto:400,400i,700', rel: 'stylesheet' }
             ]}
         />
         <Header />
