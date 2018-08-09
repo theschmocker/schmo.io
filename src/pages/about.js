@@ -57,7 +57,7 @@ const AboutThisSite = () => (
     <section>
         <Heading>About this Site</Heading>
         <p>
-            This site was built with <StyledAnchor href="https://gatsbyjs.org">Gatsby</StyledAnchor>, a static site generator built that uses <StyledAnchor href="https://reactjs.org">React</StyledAnchor> and <StyledAnchor href="https://graphql.org">GraphQL</StyledAnchor>. You can check out my code on <StyledAnchor href="https://github.com/theschmocker/schmo.io.git">Github</StyledAnchor>!
+            This site was built with <StyledAnchor href="https://gatsbyjs.org">Gatsby</StyledAnchor>, a static site generator that uses <StyledAnchor href="https://reactjs.org">React</StyledAnchor> and <StyledAnchor href="https://graphql.org">GraphQL</StyledAnchor>. You can check out my code on <StyledAnchor href="https://github.com/theschmocker/schmo.io.git">Github</StyledAnchor>!
         </p>
     </section>
 )
