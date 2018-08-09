@@ -6,7 +6,7 @@ import Navigation from '../Navigation';
 
 const Header = () => (
     <HeaderWrapper>
-        <Heading><Link to="/">schmo</Link></Heading>
+        <Heading><Link to="/">Jacob Schmocker</Link></Heading>
         <Navigation />
     </HeaderWrapper>
 )
@@ -40,8 +40,11 @@ const HeaderWrapper = styled.div`
 `;
 
 const Heading = styled.h1`
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: 'Mina', serif;
     text-transform: uppercase;
+    @media screen and (min-width: 450px) {
+        font-size: 2rem;
+    }
 `;
 
