@@ -67,7 +67,7 @@ export default AboutPage
 
 // Styled Components
 
-const AboutWrapper = styled.article`
+const AboutWrapper = styled.section`
     margin: 0 auto;
     padding: 5rem 1.25rem;
     background: #333;
