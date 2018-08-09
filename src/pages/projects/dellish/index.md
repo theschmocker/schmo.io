@@ -4,9 +4,13 @@ description: "Answering the age old question 'I dunno. Where do you wanna eat?'"
 liveURL: ""
 repo: "https://github.com/theschmocker/dellish"
 technologies: "React, Express, Node, Knex/sqlite3"
+attachments:
+    - "./screenshot.png"
 ---
 
 The back and forth involved in picking a restaurant to visit can be frustrating. That's why I made Dellish.
+
+![Screenshot of Dellish](./screenshot.png "Screenshot of Dellish")
 
 Dellish pulls in a list of restaurants in Wisconsin Dells, along with contact information, open hours, etc. It displays this information to the user and offers to pick one for them. 
 

@@ -4,10 +4,14 @@ description: "My first website."
 liveURL: "https://jacobschmocker.com"
 repo: "https://github.com/theschmocker/jacobschmocker.com.git"
 technologies: "HTML, CSS, JavaScript"
+attachments:
+    - "./screenshot.png"
 ---
 
 jacobschmocker.com was the first version of my website. I had just started learning web development, and decided that I needed to put myself out there.
 I made the site with the usual three technologies: HTML, CSS, and vanilla JavaScript. 
+
+![Screenshot of jacobschmocker.com](./screenshot.png "Screenshot of jacobschmocker.com")
 
 ## A Little Style
 Styling it was a challenge. It was excellent practice for a lot of concepts: (responsive) design, browser differences, flexbox, etc. If I were to go back and change anything, I would use a more consistent naming convention like BEM. I might also have used a CSS preprossor like SASS.

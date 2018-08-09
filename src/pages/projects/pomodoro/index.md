@@ -4,9 +4,13 @@ description: "A Pomodoro timer!"
 liveURL: "https://pomti.me"
 repo: "https://github.com/theschmocker/pomodoro.git"
 technologies: "HTML, CSS, JavaScript, Webpack"
+attachments:
+    - "./screenshot.png"
 ---
 
 Once upon a time, I stumbled upon the Pomodoro technique. Then I used it to build my own Pomodoro timer. There are great timers already out there, but I wanted to build my own.
+
+![Screenshot of Pomtime](./screenshot.png "Screenshot of Pomtime")
 
 Pomtime is a Progressive Web App, so it can be installed as an app on a user's phone and used offline. It also saves a user's timer settings to localStorage.
 
