@@ -16,7 +16,7 @@ class Navigation extends Component {
             { route: '/', linkText: 'Home' },
             { route: '/about', linkText: 'About' },
             { route: '/projects', linkText: 'Projects' },
-            { route: '/blog', linkText: 'Blog' },
+            // remove for now{ route: '/blog', linkText: 'Blog' },
         ]
         return (
             <Menu isOpen={ this.state.menuIsOpen } right>
