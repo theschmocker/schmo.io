@@ -5,13 +5,16 @@ import styled from 'styled-components';
 import Heading from '../components/ContentHeading';
 import CatGif from '../components/CatGif';
 import StyledAnchor from '../components/StyledAnchor';
+import Article from '../components/Article';
 
 const AboutPage = () => (
-    <AboutWrapper>
-        <AboutMe />
-        <Skills />
-        <AboutThisSite />
-  </AboutWrapper>
+    <Article>
+        <AboutWrapper>
+            <AboutMe />
+            <Skills />
+            <AboutThisSite />
+        </AboutWrapper>
+    </Article>
 )
 
 const AboutMe = () => (
@@ -30,7 +33,7 @@ const AboutMe = () => (
         <p>
             The web is a wonderful (and sometimes ugly) amalgam of art, engineering, ingenuity, and information that has the profound capability to better the way we see and interact with the world; I want to be a part of that.
         </p>
-        <p>But mostly, I just wanna build cool stuff.</p>
+        <p>But mostly, I just wanna build <strong>cool stuff</strong>.</p>
         <CatGif />
 
     </section>
@@ -54,7 +57,7 @@ const AboutThisSite = () => (
     <section>
         <Heading>About this Site</Heading>
         <p>
-            This site was built with <StyledAnchor href="https://gatsbyjs.org">Gatsby</StyledAnchor>, a static site generator built around <StyledAnchor href="https://reactjs.org">React</StyledAnchor>. You can check out my code on <StyledAnchor href="https://github.com/theschmocker/schmo.io.git">Github</StyledAnchor>!
+            This site was built with <StyledAnchor href="https://gatsbyjs.org">Gatsby</StyledAnchor>, a static site generator built that uses <StyledAnchor href="https://reactjs.org">React</StyledAnchor> and <StyledAnchor href="https://graphql.org">GraphQL</StyledAnchor>. You can check out my code on <StyledAnchor href="https://github.com/theschmocker/schmo.io.git">Github</StyledAnchor>!
         </p>
     </section>
 )
@@ -65,8 +68,8 @@ export default AboutPage
 // Styled Components
 
 const AboutWrapper = styled.article`
-    margin: 0;
-    padding: 1.25rem;
+    margin: 0 auto;
+    padding: 5rem 1.25rem;
     background: #333;
     font-family: "Roboto", sans-serif;
     line-height: 1.4;
@@ -75,13 +78,11 @@ const AboutWrapper = styled.article`
     max-width: 600px;
 
     @media screen and (min-width: 550px) {
-        font-size: 1.25rem;
-     
+        font-size: 1.1rem; 
     }
 
-    @media screen and (min-width: 600px) {
-        border-radius: 5px;
-        margin: 3rem auto;
+    section {
+        margin-bottom: 3rem;
     }
 `;
 
