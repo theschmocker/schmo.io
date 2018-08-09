@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 
 export default styled.h2`
@@ -8,6 +7,7 @@ export default styled.h2`
     width: intrinsic;
     width: max-content;
     font-size: 1.5rem;
+    font-family: "Roboto", sans-serif;
     color: #eee;
     &:after {
         content: "";
