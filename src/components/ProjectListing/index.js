@@ -11,6 +11,7 @@ const ProjectListing = ({ project, className }) => (
 
 export default styled(ProjectListing)`
     a {
+        color: #eee;
         opacity: 0.9;
         &:visited {
             color: #eee;
