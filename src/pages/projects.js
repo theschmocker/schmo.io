@@ -1,20 +1,26 @@
 import React from 'react'
-import Link from 'gatsby-link'
-import Section from '../components/StyledSection';
+import styled from 'styled-components';
 
-const ProjectListing = ({ project }) => (
-    <div>
-        <Link to={project.fields.slug}><h3>{project.frontmatter.name}</h3></Link>
-        <p>{project.frontmatter.description}</p>
-    </div>
-)
+import ContentHeading from '../components/ContentHeading';
+import Article from '../components/Article';
+import ProjectListing from '../components/ProjectListing';
+
 
 const ProjectPage = ({ data }) => (
-  <Section>
-    <h2>Projects</h2>
-    {data.allMarkdownRemark.edges.map(({ node }) => <ProjectListing project={node} />)}
-  </Section>
+    <Article>
+        <StyledProjectsList>
+            <ContentHeading>Projects</ContentHeading>
+            {data.allMarkdownRemark.edges.map(({ node }) => <ProjectListing project={node} />)}
+        </StyledProjectsList>
+  </Article>
 )
+
+const StyledProjectsList = styled.article`
+    padding: 5rem 1.25rem;
+    margin: 0 auto;
+    max-width: 600px;
+    color: #eee;
+`;
 
 export default ProjectPage
 
