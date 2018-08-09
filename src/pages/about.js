@@ -22,7 +22,7 @@ const AboutMe = () => (
         <Heading>About Me</Heading>
         <p>
             My name is Jacob Schmocker, but you can call me Schmo. 
-            I'm a self-taught web developer (in progress) from Wisconsin.
+            I'm a self-taught web developer from Wisconsin.
         </p>
         <p>
             My first computer was a hand-me-down Gateway running Windows 98. 
@@ -44,7 +44,7 @@ const Skills = () => (
     <section>
         <Heading>Skills</Heading>
         <p>
-            I've been teaching myself web development for just over a year. Over the course of my (ongoing) journey, I've made myself familiar with <em>HTML</em>, <em>CSS</em>, and <em>JavaScript</em>&#8202;&mdash;&#8202;the bread and butter. I'm not an expert yet, but practice makes perfect and I love to learn!
+            I've been teaching myself web development for just over a year. Over the course of my ongoing journey, I've made myself familiar with <em>HTML</em>, <em>CSS</em>, and <em>JavaScript</em>&#8202;&mdash;&#8202;the bread and butter. I'm not an expert yet, but practice makes perfect and I love to learn!
         </p>
         <p>
             Lately I've been working with <em>React</em> and <em>Node</em>.
