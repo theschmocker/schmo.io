@@ -1,7 +1,7 @@
 ---
 name: "Dellish"
 description: "Answering the age old question 'I dunno. Where do you wanna eat?'"
-liveURL: ""
+liveURL: "http://dellish.xyz"
 repo: "https://github.com/theschmocker/dellish"
 technologies: "React, Express, Node, Knex/sqlite3"
 attachments:
