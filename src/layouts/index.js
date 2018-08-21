@@ -11,6 +11,7 @@ import 'typeface-mina';
 import Header from '../components/Header'
 import './normalize.css';
 import './index.css';
+import favicon from '../media/favicon.ico';
 
 class Content extends Component {
     render() {
@@ -27,8 +28,11 @@ const TemplateWrapper = ({ children, location }) => (
         <Helmet
             title="Jacob Schmocker"
             meta={[
-                { name: 'description', content: 'Jacob Schmocker is a web developer, soon-to-be student of computer science, and a Linux enthusiast that decided to start a blog.' },
+                { name: 'description', content: 'Jacob Schmocker is a web developer, soon-to-be student of computer science, and a Linux enthusiast.' },
                 { name: 'author', content: 'Jacob Schmocker' },
+            ]}
+            link={[
+                { rel: 'icon', href: `${favicon}` },
             ]}
         />
         <Header />
