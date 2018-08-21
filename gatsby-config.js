@@ -1,7 +1,7 @@
 module.exports = {
     siteMetadata: {
-        title: 'Gatsby Tutorial',
-        desc: "Levelup Tutorials - Pro Gatsby",
+        title: 'Jacob Schmocker',
+        desc: 'Jacob Schmocker is a web developer, soon-to-be student of computer science, and a Linux enthusiast.',
     },
     plugins: [
         'gatsby-plugin-react-helmet',
